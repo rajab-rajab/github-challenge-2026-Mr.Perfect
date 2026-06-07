@@ -1,0 +1,748 @@
+{
+  "project": "MR. PERFECT OS",
+  "active_registered_tools": 106,
+  "tools": [
+    {
+      "name": "auto_correct_code",
+      "module": "agent_tools.code_tools",
+      "function_name": "auto_correct_code",
+      "description": "Apply common automatic corrections to code using code text plus optional error details.",
+      "args_description": "code, language, error_message"
+    },
+    {
+      "name": "browser_browse",
+      "module": "agent_tools.web_tools",
+      "function_name": "browser_browse",
+      "description": "Navigate and read website content via Playwright.",
+      "args_description": "url_or_query"
+    },
+    {
+      "name": "calculate",
+      "module": "agent_tools.system_tools",
+      "function_name": "calculate",
+      "description": "Safely evaluate math expressions.",
+      "args_description": "expression"
+    },
+    {
+      "name": "change_directory",
+      "module": "agent_tools.file_tools",
+      "function_name": "change_directory",
+      "description": "Change current working directory.",
+      "args_description": "path"
+    },
+    {
+      "name": "check_code_syntax",
+      "module": "agent_tools.code_tools",
+      "function_name": "check_code_syntax",
+      "description": "Verify code syntax without executing it.",
+      "args_description": "code, language"
+    },
+    {
+      "name": "check_port",
+      "module": "agent_tools.network_tools",
+      "function_name": "check_port",
+      "description": "Check if a port is open on a host.",
+      "args_description": "host, port, timeout"
+    },
+    {
+      "name": "check_program_removable",
+      "module": "agent_tools.winget_tools",
+      "function_name": "check_program_removable",
+      "description": "Check if a program can be safely uninstalled.",
+      "args_description": "program_display_name"
+    },
+    {
+      "name": "check_program_updates",
+      "module": "agent_tools.winget_tools",
+      "function_name": "check_program_updates",
+      "description": "Check for program updates online (REQUIRES USER REQUEST).",
+      "args_description": "program_name"
+    },
+    {
+      "name": "confirm_delete",
+      "module": "agent_tools.file_tools",
+      "function_name": "confirm_delete",
+      "description": "Actually perform the deletion after user confirmation.",
+      "args_description": "filepath"
+    },
+    {
+      "name": "convert_indentation",
+      "module": "agent_tools.code_tools",
+      "function_name": "convert_indentation",
+      "description": "Convert indentation in code to a given number of spaces.",
+      "args_description": "code, spaces"
+    },
+    {
+      "name": "copy_file",
+      "module": "agent_tools.file_tools",
+      "function_name": "copy_file",
+      "description": "Copy a file or folder to destination.",
+      "args_description": "source, destination"
+    },
+    {
+      "name": "count_lines_of_code",
+      "module": "agent_tools.code_tools",
+      "function_name": "count_lines_of_code",
+      "description": "Count total, blank, comment, and code lines.",
+      "args_description": "code, language"
+    },
+    {
+      "name": "create_code_file",
+      "module": "agent_tools.code_tools",
+      "function_name": "create_code_file",
+      "description": "Saves code to a file.",
+      "args_description": "filepath, content, overwrite(optional), auto_rename(optional)"
+    },
+    {
+      "name": "create_css_boilerplate",
+      "module": "agent_tools.code_tools",
+      "function_name": "create_css_boilerplate",
+      "description": "Create a starter CSS stylesheet.",
+      "args_description": "description"
+    },
+    {
+      "name": "create_folder",
+      "module": "agent_tools.file_tools",
+      "function_name": "create_folder",
+      "description": "Create a new folder/directory.",
+      "args_description": "folderpath"
+    },
+    {
+      "name": "create_html_boilerplate",
+      "module": "agent_tools.code_tools",
+      "function_name": "create_html_boilerplate",
+      "description": "Create a starter HTML page.",
+      "args_description": "title"
+    },
+    {
+      "name": "create_json_stub",
+      "module": "agent_tools.code_tools",
+      "function_name": "create_json_stub",
+      "description": "Create a starter JSON structure from a short description.",
+      "args_description": "description"
+    },
+    {
+      "name": "create_markdown_doc",
+      "module": "agent_tools.code_tools",
+      "function_name": "create_markdown_doc",
+      "description": "Create a markdown document from a title and body text.",
+      "args_description": "title, content"
+    },
+    {
+      "name": "create_readme_stub",
+      "module": "agent_tools.code_tools",
+      "function_name": "create_readme_stub",
+      "description": "Create a simple README markdown file for a project.",
+      "args_description": "project_name, description, filename"
+    },
+    {
+      "name": "create_test_stub",
+      "module": "agent_tools.code_tools",
+      "function_name": "create_test_stub",
+      "description": "Generate a starter unit test file for Python or JavaScript code.",
+      "args_description": "filepath, language"
+    },
+    {
+      "name": "delete_file",
+      "module": "agent_tools.file_tools",
+      "function_name": "delete_file",
+      "description": "Delete a file or empty folder with security restrictions.",
+      "args_description": "filepath"
+    },
+    {
+      "name": "detect_code_language",
+      "module": "agent_tools.code_tools",
+      "function_name": "detect_code_language",
+      "description": "Detect the likely programming language of a code snippet.",
+      "args_description": "code"
+    },
+    {
+      "name": "diff_code_versions",
+      "module": "agent_tools.code_tools",
+      "function_name": "diff_code_versions",
+      "description": "Show a unified diff between old code and new code.",
+      "args_description": "old_code, new_code"
+    },
+    {
+      "name": "dns_lookup",
+      "module": "agent_tools.network_tools",
+      "function_name": "dns_lookup",
+      "description": "Perform DNS lookup for a hostname.",
+      "args_description": "hostname"
+    },
+    {
+      "name": "execute_code",
+      "module": "agent_tools.code_tools",
+      "function_name": "execute_code",
+      "description": "Executes code snippets dynamically and returns output.",
+      "args_description": "code, language (python/javascript)"
+    },
+    {
+      "name": "execute_install",
+      "module": "agent_tools.winget_tools",
+      "function_name": "execute_install",
+      "description": "Execute program installation after user confirmation.",
+      "args_description": "program_name, download_url"
+    },
+    {
+      "name": "execute_restart",
+      "module": "agent_tools.os_tools",
+      "function_name": "execute_restart",
+      "description": "Execute system restart after user confirmation.",
+      "args_description": ""
+    },
+    {
+      "name": "execute_shutdown",
+      "module": "agent_tools.os_tools",
+      "function_name": "execute_shutdown",
+      "description": "Execute system shutdown after user confirmation.",
+      "args_description": "force"
+    },
+    {
+      "name": "execute_uninstall",
+      "module": "agent_tools.winget_tools",
+      "function_name": "execute_uninstall",
+      "description": "Execute program uninstallation after user confirmation.",
+      "args_description": "program_name, uninstall_string"
+    },
+    {
+      "name": "execute_update",
+      "module": "agent_tools.system_tools",
+      "function_name": "execute_update",
+      "description": "Download and run an update.",
+      "args_description": "program_name, download_url"
+    },
+    {
+      "name": "explain_code",
+      "module": "agent_tools.code_tools",
+      "function_name": "explain_code",
+      "description": "Explain the structure of code by listing important parts and observations.",
+      "args_description": "code, language"
+    },
+    {
+      "name": "extract_imports",
+      "module": "agent_tools.code_tools",
+      "function_name": "extract_imports",
+      "description": "Extract imports or dependencies from source code.",
+      "args_description": "code, language"
+    },
+    {
+      "name": "format_python_code",
+      "module": "agent_tools.code_tools",
+      "function_name": "format_python_code",
+      "description": "Apply simple formatting cleanup to Python code.",
+      "args_description": "code"
+    },
+    {
+      "name": "generate_code_template",
+      "module": "agent_tools.code_tools",
+      "function_name": "generate_code_template",
+      "description": "Generate intelligent starter code for many app types including GUI and non-GUI projects.",
+      "args_description": "task description, language"
+    },
+    {
+      "name": "generate_filename",
+      "module": "agent_tools.code_tools",
+      "function_name": "generate_filename",
+      "description": "Generate a clean filename from a coding task and language.",
+      "args_description": "task, language"
+    },
+    {
+      "name": "generate_password",
+      "module": "agent_tools.system_tools",
+      "function_name": "generate_password",
+      "description": "Generate a secure random password.",
+      "args_description": "length, include_special"
+    },
+    {
+      "name": "generate_requirements_from_code",
+      "module": "agent_tools.code_tools",
+      "function_name": "generate_requirements_from_code",
+      "description": "Generate a simple requirements list from Python imports.",
+      "args_description": "code"
+    },
+    {
+      "name": "get_agent_info",
+      "module": "agent_tools.system_tools",
+      "function_name": "get_agent_info",
+      "description": "Get agent status and stats.",
+      "args_description": ""
+    },
+    {
+      "name": "get_battery_status",
+      "module": "agent_tools.os_tools",
+      "function_name": "get_battery_status",
+      "description": "Get battery status (if available).",
+      "args_description": ""
+    },
+    {
+      "name": "get_clipboard",
+      "module": "agent_tools.network_tools",
+      "function_name": "get_clipboard",
+      "description": "Get current clipboard content.",
+      "args_description": ""
+    },
+    {
+      "name": "get_code_snippet_info",
+      "module": "agent_tools.network_tools",
+      "function_name": "get_code_snippet_info",
+      "description": "Get helpful information and common patterns for a language.",
+      "args_description": "language"
+    },
+    {
+      "name": "get_cpu_info",
+      "module": "agent_tools.os_tools",
+      "function_name": "get_cpu_info",
+      "description": "Get detailed CPU information.",
+      "args_description": ""
+    },
+    {
+      "name": "get_current_directory",
+      "module": "agent_tools.file_tools",
+      "function_name": "get_current_directory",
+      "description": "Get current working directory.",
+      "args_description": ""
+    },
+    {
+      "name": "get_datetime",
+      "module": "agent_tools.system_tools",
+      "function_name": "get_datetime",
+      "description": "Get current date and time.",
+      "args_description": "format_type"
+    },
+    {
+      "name": "get_disk_usage",
+      "module": "agent_tools.os_tools",
+      "function_name": "get_disk_usage",
+      "description": "Get disk usage statistics.",
+      "args_description": "path"
+    },
+    {
+      "name": "get_file_hash",
+      "module": "agent_tools.file_tools",
+      "function_name": "get_file_hash",
+      "description": "Calculate hash of a file.",
+      "args_description": "filepath, algorithm"
+    },
+    {
+      "name": "get_file_info",
+      "module": "agent_tools.file_tools",
+      "function_name": "get_file_info",
+      "description": "Get detailed file information.",
+      "args_description": "filepath"
+    },
+    {
+      "name": "get_installed_programs_list",
+      "module": "agent_tools.winget_tools",
+      "function_name": "get_installed_programs_list",
+      "description": "Get list of installed programs for uninstallation selection.",
+      "args_description": "*args, **kwargs"
+    },
+    {
+      "name": "get_ip_info",
+      "module": "agent_tools.network_tools",
+      "function_name": "get_ip_info",
+      "description": "Get public IP address information.",
+      "args_description": ""
+    },
+    {
+      "name": "get_memory_info",
+      "module": "agent_tools.os_tools",
+      "function_name": "get_memory_info",
+      "description": "Get detailed memory information.",
+      "args_description": ""
+    },
+    {
+      "name": "get_network_info",
+      "module": "agent_tools.network_tools",
+      "function_name": "get_network_info",
+      "description": "Get network connection information.",
+      "args_description": ""
+    },
+    {
+      "name": "get_processes",
+      "module": "agent_tools.os_tools",
+      "function_name": "get_processes",
+      "description": "Get running processes sorted by CPU or memory usage.",
+      "args_description": "limit"
+    },
+    {
+      "name": "get_system_info",
+      "module": "agent_tools.os_tools",
+      "function_name": "get_system_info",
+      "description": "Get current system resource usage and hardware information.",
+      "args_description": "*args, **kwargs"
+    },
+    {
+      "name": "get_uptime",
+      "module": "agent_tools.os_tools",
+      "function_name": "get_uptime",
+      "description": "Get system uptime.",
+      "args_description": ""
+    },
+    {
+      "name": "get_weather",
+      "module": "agent_tools.web_tools",
+      "function_name": "get_weather",
+      "description": "Get weather for a location.",
+      "args_description": "location"
+    },
+    {
+      "name": "kill_process",
+      "module": "agent_tools.os_tools",
+      "function_name": "kill_process",
+      "description": "Terminate a process by PID.",
+      "args_description": "pid"
+    },
+    {
+      "name": "list_code_symbols",
+      "module": "agent_tools.code_tools",
+      "function_name": "list_code_symbols",
+      "description": "List functions, classes, and key symbols in source code.",
+      "args_description": "code, language"
+    },
+    {
+      "name": "list_files",
+      "module": "agent_tools.file_tools",
+      "function_name": "list_files",
+      "description": "List files in a directory.",
+      "args_description": "path, pattern, include_hidden"
+    },
+    {
+      "name": "load_session",
+      "module": "agent_tools.system_tools",
+      "function_name": "load_session",
+      "description": "Restores chat history from JSON.",
+      "args_description": "filepath"
+    },
+    {
+      "name": "local_html_file",
+      "module": "agent_tools.file_tools",
+      "function_name": "local_html_file",
+      "description": "Start a local HTTP server and open an HTML file.",
+      "args_description": "filepath"
+    },
+    {
+      "name": "move_file",
+      "module": "agent_tools.file_tools",
+      "function_name": "move_file",
+      "description": "Move a file or folder to destination.",
+      "args_description": "source, destination"
+    },
+    {
+      "name": "open_web",
+      "module": "agent_tools.web_tools",
+      "function_name": "open_web",
+      "description": "Open a specific URL in the browser.",
+      "args_description": "url"
+    },
+    {
+      "name": "ping_host",
+      "module": "agent_tools.network_tools",
+      "function_name": "ping_host",
+      "description": "Ping a host to check connectivity.",
+      "args_description": "host, count"
+    },
+    {
+      "name": "prepare_install_command",
+      "module": "agent_tools.os_tools",
+      "function_name": "prepare_install_command",
+      "description": "Prepare installation command for user confirmation.",
+      "args_description": "program_name, download_url"
+    },
+    {
+      "name": "prepare_shutdown",
+      "module": "agent_tools.os_tools",
+      "function_name": "prepare_shutdown",
+      "description": "Prepare shutdown with user confirmation.",
+      "args_description": "force"
+    },
+    {
+      "name": "prepare_uninstall_command",
+      "module": "agent_tools.os_tools",
+      "function_name": "prepare_uninstall_command",
+      "description": "Prepare uninstallation command for user confirmation.",
+      "args_description": "program_name, uninstall_string"
+    },
+    {
+      "name": "prepare_update_command",
+      "module": "agent_tools.os_tools",
+      "function_name": "prepare_update_command",
+      "description": "Prepare update command with user confirmation.",
+      "args_description": "program_name, download_url"
+    },
+    {
+      "name": "ps_get_disk_partitions",
+      "module": "agent_tools.os_tools",
+      "function_name": "ps_get_disk_partitions",
+      "description": "Get Windows Disk Partition information.",
+      "args_description": ""
+    },
+    {
+      "name": "ps_get_environment_vars",
+      "module": "agent_tools.os_tools",
+      "function_name": "ps_get_environment_vars",
+      "description": "Get Windows Environment Variables.",
+      "args_description": ""
+    },
+    {
+      "name": "ps_get_eventlog",
+      "module": "agent_tools.os_tools",
+      "function_name": "ps_get_eventlog",
+      "description": "Get Windows Event Log entries.",
+      "args_description": "logname, count"
+    },
+    {
+      "name": "ps_get_firewall_rules",
+      "module": "agent_tools.os_tools",
+      "function_name": "ps_get_firewall_rules",
+      "description": "Get Windows Firewall Rules.",
+      "args_description": "enabled_only"
+    },
+    {
+      "name": "ps_get_hotfixes",
+      "module": "agent_tools.os_tools",
+      "function_name": "ps_get_hotfixes",
+      "description": "Get installed Windows Hotfixes.",
+      "args_description": ""
+    },
+    {
+      "name": "ps_get_installed_programs",
+      "module": "agent_tools.os_tools",
+      "function_name": "ps_get_installed_programs",
+      "description": "Get list of installed programs (Windows).",
+      "args_description": ""
+    },
+    {
+      "name": "ps_get_network_adapters",
+      "module": "agent_tools.network_tools",
+      "function_name": "ps_get_network_adapters",
+      "description": "Get Windows Network Adapter information.",
+      "args_description": ""
+    },
+    {
+      "name": "ps_get_processes_detailed",
+      "module": "agent_tools.os_tools",
+      "function_name": "ps_get_processes_detailed",
+      "description": "Get detailed process information with PowerShell.",
+      "args_description": ""
+    },
+    {
+      "name": "ps_get_registry",
+      "module": "agent_tools.os_tools",
+      "function_name": "ps_get_registry",
+      "description": "Read Windows Registry keys.",
+      "args_description": "key_path"
+    },
+    {
+      "name": "ps_get_running_tasks",
+      "module": "agent_tools.os_tools",
+      "function_name": "ps_get_running_tasks",
+      "description": "Get running tasks (similar to tasklist).",
+      "args_description": ""
+    },
+    {
+      "name": "ps_get_scheduled_tasks",
+      "module": "agent_tools.os_tools",
+      "function_name": "ps_get_scheduled_tasks",
+      "description": "Get Windows Scheduled Tasks.",
+      "args_description": ""
+    },
+    {
+      "name": "ps_get_services",
+      "module": "agent_tools.os_tools",
+      "function_name": "ps_get_services",
+      "description": "Get Windows services using PowerShell.",
+      "args_description": "status"
+    },
+    {
+      "name": "ps_get_systeminfo",
+      "module": "agent_tools.os_tools",
+      "function_name": "ps_get_systeminfo",
+      "description": "Get comprehensive Windows System Information.",
+      "args_description": ""
+    },
+    {
+      "name": "ps_get_wifi_networks",
+      "module": "agent_tools.network_tools",
+      "function_name": "ps_get_wifi_networks",
+      "description": "Get available WiFi networks.",
+      "args_description": ""
+    },
+    {
+      "name": "ps_service_action",
+      "module": "agent_tools.os_tools",
+      "function_name": "ps_service_action",
+      "description": "Start, stop, or restart a Windows service.",
+      "args_description": "service_name, action"
+    },
+    {
+      "name": "read_file",
+      "module": "agent_tools.file_tools",
+      "function_name": "read_file",
+      "description": "Read contents of a file.",
+      "args_description": "filepath, max_lines, encoding"
+    },
+    {
+      "name": "read_file_lines",
+      "module": "agent_tools.file_tools",
+      "function_name": "read_file_lines",
+      "description": "Read specific lines from a file.",
+      "args_description": "filepath, start_line, count"
+    },
+    {
+      "name": "rename_file",
+      "module": "agent_tools.file_tools",
+      "function_name": "rename_file",
+      "description": "Rename a file or folder.",
+      "args_description": "oldpath, newname"
+    },
+    {
+      "name": "restart_computer",
+      "module": "agent_tools.os_tools",
+      "function_name": "restart_computer",
+      "description": "Prepare to restart the computer. REQUIRES USER CONFIRMATION.",
+      "args_description": ""
+    },
+    {
+      "name": "run_command",
+      "module": "agent_tools.os_tools",
+      "function_name": "run_command",
+      "description": "Execute a system command (cross-platform).",
+      "args_description": "command, shell"
+    },
+    {
+      "name": "run_file",
+      "module": "agent_tools.code_tools",
+      "function_name": "run_file",
+      "description": "Runs a saved file and returns output.",
+      "args_description": "filepath"
+    },
+    {
+      "name": "run_powershell",
+      "module": "agent_tools.os_tools",
+      "function_name": "run_powershell",
+      "description": "Execute a PowerShell command and return output.",
+      "args_description": "command, timeout"
+    },
+    {
+      "name": "save_session",
+      "module": "agent_tools.system_tools",
+      "function_name": "save_session",
+      "description": "Saves chat history to JSON.",
+      "args_description": "filename"
+    },
+    {
+      "name": "search_files",
+      "module": "agent_tools.file_tools",
+      "function_name": "search_files",
+      "description": "Search for files matching a pattern.",
+      "args_description": "pattern, path, max_results"
+    },
+    {
+      "name": "search_in_code",
+      "module": "agent_tools.code_tools",
+      "function_name": "search_in_code",
+      "description": "Search for a text pattern inside source code.",
+      "args_description": "code, pattern"
+    },
+    {
+      "name": "search_program",
+      "module": "agent_tools.web_tools",
+      "function_name": "search_program",
+      "description": "Search for official program download links.",
+      "args_description": "program_name"
+    },
+    {
+      "name": "set_clipboard",
+      "module": "agent_tools.network_tools",
+      "function_name": "set_clipboard",
+      "description": "Set clipboard content.",
+      "args_description": "text"
+    },
+    {
+      "name": "shutdown_computer",
+      "module": "agent_tools.os_tools",
+      "function_name": "shutdown_computer",
+      "description": "Prepare to shutdown the computer. REQUIRES USER CONFIRMATION.",
+      "args_description": "force"
+    },
+    {
+      "name": "sleep_computer",
+      "module": "agent_tools.os_tools",
+      "function_name": "sleep_computer",
+      "description": "Put computer to sleep mode.",
+      "args_description": ""
+    },
+    {
+      "name": "strip_comments",
+      "module": "agent_tools.code_tools",
+      "function_name": "strip_comments",
+      "description": "Remove simple single-line comments from code.",
+      "args_description": "code, language"
+    },
+    {
+      "name": "summarize_code_file",
+      "module": "agent_tools.code_tools",
+      "function_name": "summarize_code_file",
+      "description": "Read a code file and summarize its likely purpose.",
+      "args_description": "filepath"
+    },
+    {
+      "name": "validate_program_safety",
+      "module": "agent_tools.winget_tools",
+      "function_name": "validate_program_safety",
+      "description": "Validate if a program is safe to install (basic checks).",
+      "args_description": "program_name, url"
+    },
+    {
+      "name": "validate_self_protection",
+      "module": "agent_tools.system_tools",
+      "function_name": "validate_self_protection",
+      "description": "Check if path is critical.",
+      "args_description": "path"
+    },
+    {
+      "name": "validate_update_safety",
+      "module": "agent_tools.system_tools",
+      "function_name": "validate_update_safety",
+      "description": "Validate update source safety.",
+      "args_description": "program_name, download_url"
+    },
+    {
+      "name": "web_search",
+      "module": "agent_tools.web_tools",
+      "function_name": "web_search",
+      "description": "Search the web for up-to-date information.",
+      "args_description": "query"
+    },
+    {
+      "name": "winget_install",
+      "module": "agent_tools.winget_tools",
+      "function_name": "winget_install",
+      "description": "Installs a program with a 10-minute timeout and aggressive log cleaning.",
+      "args_description": "package_id"
+    },
+    {
+      "name": "winget_uninstall",
+      "module": "agent_tools.winget_tools",
+      "function_name": "winget_uninstall",
+      "description": "Uninstalls a program cleanly.",
+      "args_description": "package_id"
+    },
+    {
+      "name": "winget_upgrade",
+      "module": "agent_tools.winget_tools",
+      "function_name": "winget_upgrade",
+      "description": "Upgrades an existing installed software application to its latest version.",
+      "args_description": "package_id, *args, **kwargs"
+    },
+    {
+      "name": "write_file",
+      "module": "agent_tools.code_tools",
+      "function_name": "write_file",
+      "description": "Writes text or code to a file.",
+      "args_description": "filepath, content"
+    }
+  ]
+}
